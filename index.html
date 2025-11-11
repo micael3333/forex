@@ -3,161 +3,286 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BacanaPlay Portugal — Slots & Roleta com Dinheiro Real (Licença SRIJ 015)</title>
-  <meta name="description" content="Guia premium BacanaPlay em Portugal: bónus, torneios, cashback, VIP high stakes e pagamentos. Operador licenciado (SRIJ 015). Joga com responsabilidade (18+).">
+  <title>BacanaPlay Portugal — Casino Online com Dinheiro Real (Licença SRIJ 015)</title>
+  <meta name="description" content="Casino online com dinheiro real em Portugal: slots, roleta, bónus, torneios, cashback e VIP High Stakes na BacanaPlay (SRIJ 015). Joga com responsabilidade (18+).">
   <link rel="canonical" href="./index.html">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PV9V4QT6');</script>
+  <!-- End Google Tag Manager -->
 
   <style>
     :root{
       --primary:#520092; --primary-dark:#3a006b;
-      --background:#f4f7f9; --text:#343a40;
-      --srij-bg:#ffe0b2; --srij-text:#e65100;
-      --card:#ffffff; --muted:#6c757d;
+      --bg:#ffffff; --text:#2b2f33; --muted:#6c757d;
       --cta:#f7a83d; --cta-hover:#d18d2d;
-      --border:#e9ecef;
+      --border:#e9ecef; --card:#fafbfc;
+      --srij-bg:#fff3cd; --srij-text:#7f6000;
+      --header:#0d0d0f; --header-text:#ffffff;
     }
-    html,body{margin:0;padding:0;background:var(--background);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-    .container{max-width:1000px;margin:0 auto;padding:20px}
-    header{background:#fff;border-bottom:3px solid var(--primary)}
-    nav{display:flex;gap:16px;flex-wrap:wrap;padding:14px 0}
-    nav a{text-decoration:none;color:var(--primary);font-weight:bold}
-    h1{color:var(--primary-dark);font-size:2.2em;border-bottom:2px solid #ccc;padding-bottom:10px;margin-top:20px}
-    h2{color:var(--primary);font-size:1.6em;margin-top:28px}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:var(--primary)}
+    .container{max-width:1080px;margin:0 auto;padding:0 20px}
+
+    /* Header */
+    header{background:var(--header);color:var(--header-text);position:sticky;top:0;z-index:1000;border-bottom:3px solid var(--primary)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+    .brand .logo{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--primary),var(--primary-dark))}
+    .brand .name{color:#fff;font-size:1.05rem}
+    .nav-toggle{background:transparent;border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:6px;padding:8px 10px;display:none;align-items:center;gap:6px;cursor:pointer}
+    .nav-toggle svg{width:18px;height:18px;fill:#fff}
+    nav[aria-label="Navegação principal"]{display:flex;gap:18px}
+    nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;opacity:.95}
+    nav a:hover{opacity:1}
+
+    @media (max-width:860px){
+      .nav-toggle{display:flex}
+      nav[aria-label="Navegação principal"]{position:absolute;left:0;right:0;top:60px;background:var(--header);flex-direction:column;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.12);display:none}
+      nav[aria-label="Navegação principal"].open{display:flex}
+    }
+
+    /* Hero */
+    .hero{padding:26px 0 6px}
+    h1{color:var(--primary-dark);font-size:2.1rem;margin:.2rem 0 0.8rem}
+    .lead{font-size:1.02rem;color:#3a3f45}
+
+    /* Badges & CTA */
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}
+    .badge{display:inline-block;border:1px solid var(--primary);color:var(--primary);padding:4px 10px;border-radius:999px;font-size:.8rem;background:#f7f2ff}
+    .cta{display:inline-block;background:var(--cta);color:#fff !important;padding:14px 22px;border-radius:8px;font-weight:800;text-decoration:none;transition:.2s;box-shadow:0 6px 14px rgba(0,0,0,.08);margin:16px 0}
+    .cta:hover{background:var(--cta-hover);transform:translateY(-1px)}
+
+    /* Disclaimer */
+    .disclaimer{background:var(--srij-bg);border:1px solid #ffe69c;color:var(--srij-text);padding:12px 14px;border-radius:8px;font-size:.92rem}
+
+    /* Sections */
+    section{padding:22px 0;border-top:1px solid var(--border)}
+    h2{color:var(--primary);font-size:1.6rem;margin:0 0 10px}
     h3{margin:10px 0 8px}
-    .cta-button{display:inline-block;background:var(--cta);color:#fff;padding:14px 22px;border-radius:6px;font-weight:bold;margin:18px 0 28px;text-decoration:none;font-size:1.1em;transition:.2s}
-    .cta-button:hover{background:var(--cta-hover)}
-    .srij-disclaimer{padding:14px 16px;background:var(--srij-bg);color:var(--srij-text);border:1px solid #ffcc80;border-radius:6px;margin-top:18px;font-size:.95em;font-weight:bold}
-    .feature-box{background:var(--card);padding:18px;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.05);margin:16px 0;border:1px solid var(--border)}
-    .muted{color:var(--muted)}
-    .badge{display:inline-block;border:1px solid var(--primary);color:var(--primary);padding:4px 8px;border-radius:999px;font-size:.8em;margin-right:8px}
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    @media(max-width:880px){.grid{grid-template-columns:1fr}}
-    footer{margin-top:40px;padding:20px 0;border-top:1px solid var(--border);font-size:.85em;text-align:center;color:var(--muted)}
-    /* cookie banner */
-    #cookie-consent-banner{position:fixed;bottom:0;left:0;width:100%;background:#2c3e50;color:#fff;padding:15px 0;z-index:1000;border-top:2px solid var(--primary);display:none}
-    #cookie-consent-banner .row{max-width:1000px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0 20px}
+    @media(max-width:860px){.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px}
+    ul {padding-left:18px}
+
+    /* Footer */
+    footer{margin-top:30px;border-top:1px solid var(--border);background:#f7f8fa}
+    .footer-inner{padding:18px 0;color:var(--muted);font-size:.9rem;text-align:center}
+    .footer-links a{color:#556; text-decoration:none}
+    .footer-links a:hover{text-decoration:underline}
+
+    /* Cookie banner */
+    #cookie-consent-banner{position:fixed;bottom:0;left:0;width:100%;background:#2c3e50;color:#fff;padding:15px 0;z-index:1200;border-top:2px solid var(--primary);display:none}
+    #cookie-consent-banner .row{max-width:1080px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0 20px}
     #accept-cookies{background:var(--primary);color:#fff;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-weight:bold}
   </style>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BacanaPlay Portugal — Slots & Roleta com Dinheiro Real (SRIJ 015)">
-  <meta property="og:description" content="Bónus, torneios, cashback e VIP high stakes. Operador licenciado em Portugal. 18+.">
+  <meta property="og:title" content="BacanaPlay Portugal — Casino Online com Dinheiro Real (SRIJ 015)">
+  <meta property="og:description" content="Slots, roleta, bónus, torneios, cashback e VIP High Stakes. Operador licenciado em Portugal. 18+.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_PT">
+
+  <!-- JSON-LD (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"BacanaPlay Portugal — Casino Online com Dinheiro Real | PrimeFluxo",
+    "description":"Slots e roleta com dinheiro real, bónus e torneios. Operador licenciado (SRIJ 015). 18+ Joga com responsabilidade.",
+    "inLanguage":"pt-PT",
+    "publisher":{"@type":"Organization","name":"PrimeFluxo"}
+  }
+  </script>
 </head>
 <body>
-  <a href="#conteudo" class="muted" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Saltar para o conteúdo</a>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV9V4QT6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <a href="#conteudo" class="sr-only" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Saltar para o conteúdo</a>
 
   <header>
-    <div class="container">
-      <nav aria-label="Navegação principal">
-        <a href="index.html" aria-current="page">Início</a>
-        <a href="promocoes.html">Promoções</a>
-        <a href="torneios.html">Torneios</a>
+    <div class="container header-inner">
+      <div class="brand" aria-label="PrimeFluxo">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="name">Prime Fluxo</span>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+        Menu
+      </button>
+
+      <nav id="mainNav" aria-label="Navegação principal">
+        <a href="#slots">Slots (dinheiro real)</a>
+        <a href="#roleta">Roleta (dinheiro real)</a>
+        <a href="#promocoes">Promoções</a>
+        <a href="#torneios">Torneios</a>
         <a href="jogo-responsavel.html">Jogo Responsável</a>
-        <a href="termos-e-condicoes.html">Termos e Condições</a>
-        <a href="politica-privacidade.html">Política de Privacidade</a>
+        <a href="termos-e-condicoes.html">Termos</a>
+        <a href="politica-privacidade.html">Privacidade</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
 
   <main id="conteudo" class="container">
-    <div class="srij-disclaimer" role="note">
-      <p><strong>AVISO LEGAL — SRIJ:</strong> BacanaPlay é operada por <strong>SkillOnNet Ltd.</strong>, titular da <strong>Licença de Jogo Online n.º 015</strong> (Jogos de Fortuna ou Azar), emitida pelo <strong>Serviço de Regulação e Inspeção de Jogos (SRIJ)</strong> de Portugal. <strong>18+ Joga com responsabilidade.</strong></p>
-      <p style="margin-top:8px;"><strong>Divulgação de Afiliado:</strong> Este website é operado por <strong>M.Vasquez de Barros</strong> como site informativo/afiliado e pode receber compensação por referências.</p>
-    </div>
-
-    <h1>BacanaPlay Portugal — Slots & Roleta com Dinheiro Real</h1>
-    <p>Experiência <strong>premium</strong> em casino online: bónus de boas-vindas, <strong>torneios</strong>, <strong>cashback</strong>, <strong>VIP high stakes</strong> e pagamentos com métodos locais. Compara ofertas e confirma sempre os <em>Termos & Condições</em> no site do operador.</p>
-
-    <a href="https://site.gotobacanaplay.com/index.php?aname=micaelvasquess"
-       class="cta-button" target="_blank" rel="sponsored nofollow noopener"
-       aria-label="Aceder ao registo da BacanaPlay">
-       Registar & Jogar com Dinheiro Real
-    </a>
-
-    <div class="feature-box">
-      <span class="badge">Real Money</span>
-      <span class="badge">VIP High Stakes</span>
-      <span class="badge">Cashback</span>
-      <span class="badge">Torneios</span>
-    </div>
-
-    <h2>Regulamentação e Segurança</h2>
-    <div class="feature-box">
-      <h3>Conformidade em Portugal</h3>
-      <ul>
-        <li><strong>Entidade reguladora:</strong> SRIJ — Serviço de Regulação e Inspeção de Jogos.</li>
-        <li><strong>Licença n.º 015:</strong> autorização para exploração de Jogos de Fortuna ou Azar.</li>
-        <li><strong>Jogo justo (RTP):</strong> jogos auditados e publicados com RTP conforme requisitos legais.</li>
-        <li><strong>Controlo & proteção:</strong> operadores licenciados seguem exigências de segurança, KYC e políticas de jogo responsável estabelecidas pelo regulador.</li>
-      </ul>
-    </div>
-
-    <h2>Jogos, Métodos de Pagamento e Limites</h2>
-    <div class="grid">
-      <div class="feature-box">
-        <h3>Oferta de Jogos</h3>
-        <ul>
-          <li><strong>Slots</strong> (centenas de títulos de fornecedores líderes).</li>
-          <li><strong>Roleta & Blackjack</strong> (mesas ao vivo e RNG conforme licenciamento).</li>
-          <li><strong>Torneios</strong> com tabelas de liderança e prémios adicionais.</li>
-          <li><strong>VIP High Stakes</strong> com limites elevados e benefícios escaláveis.</li>
-        </ul>
+    <section class="hero">
+      <div class="disclaimer" role="note">
+        <p><strong>AVISO LEGAL — SRIJ:</strong> BacanaPlay é operada por <strong>SkillOnNet Ltd.</strong>, titular da <strong>Licença de Jogo Online n.º 015</strong> (Jogos de Fortuna ou Azar), emitida pelo <strong>SRIJ</strong> de Portugal. <strong>18+ Joga com responsabilidade.</strong></p>
+        <p style="margin-top:8px;"><strong>Divulgação de Afiliado:</strong> Este website é operado por <strong>M.Vasquez de Barros</strong> (site informativo/afiliado) e pode receber compensação por referências.</p>
       </div>
-      <div class="feature-box">
-        <h3>Pagamentos & Verificação</h3>
-        <ul>
-          <li><strong>Depósitos:</strong> cartões, Multibanco, MB Way e carteiras eletrónicas populares.</li>
-          <li><strong>Levantamentos:</strong> após verificação de identidade (<abbr title="Know Your Customer">KYC</abbr>), prazos variam por método.</li>
-          <li><strong>Moeda:</strong> EUR (€). <strong>Criptomoedas:</strong> não aceites diretamente.</li>
-          <li><strong>Depósito mínimo típico:</strong> ~€10 (confirma no operador).</li>
-        </ul>
-      </div>
-    </div>
 
-    <h2>Bónus, Cashback e Programa VIP</h2>
-    <div class="feature-box">
-      <p><strong>Bónus de boas-vindas</strong>, campanhas de <strong>cashback</strong> e <strong>clube de fidelidade/VIP</strong> podem estar disponíveis. Percentagens, rollover, elegibilidade e janelas de apuramento devem ser confirmados diretamente no site da BacanaPlay antes de aderires a qualquer oferta.</p>
+      <h1>Casino Online com Dinheiro Real — BacanaPlay Portugal</h1>
+      <p class="lead">
+        Experimenta slots e roleta com <strong>dinheiro real</strong> num ambiente licenciado: bónus de boas-vindas,
+        <strong>cashback</strong>, <strong>torneios</strong>, e programa <strong>VIP High Stakes</strong>. Tudo sob a
+        supervisão do regulador português.
+      </p>
+
+      <div class="badges">
+        <span class="badge">Dinheiro Real</span>
+        <span class="badge">Slots</span>
+        <span class="badge">Roleta</span>
+        <span class="badge">Cashback</span>
+        <span class="badge">VIP High Stakes</span>
+      </div>
+
       <a href="https://site.gotobacanaplay.com/index.php?aname=micaelvasquess"
-         class="cta-button" target="_blank" rel="sponsored nofollow noopener">
-         Ver ofertas ativas na BacanaPlay
+         class="cta" target="_blank" rel="sponsored nofollow noopener"
+         aria-label="Registar e jogar com dinheiro real na BacanaPlay">
+         Registar & Jogar com Dinheiro Real
       </a>
-    </div>
+    </section>
 
-    <h2>Perguntas Rápidas</h2>
-    <div class="feature-box">
-      <h3>Há torneios e cashback?</h3>
-      <p>Sim, podem existir campanhas com regulamentos próprios. Consulta o calendário e regras no operador.</p>
-      <h3>É possível jogar roleta com dinheiro real?</h3>
-      <p>Sim, incluindo mesas ao vivo e variações com limites elevados (High Stakes).</p>
-      <h3>Como acelerar levantamentos?</h3>
-      <p>Conclui o KYC, utiliza o mesmo método de depósito e mantém os dados de conta atualizados.</p>
-      <p class="muted"><strong>Aviso:</strong> 18+. Joga com responsabilidade. Termos e condições aplicam-se a todas as ofertas.</p>
-    </div>
+    <section id="slots">
+      <h2>Slots Online com Dinheiro Real</h2>
+      <div class="card">
+        <p>Joga centenas de <strong>slots online</strong> com RTP publicado, volatilidades variadas e jackpots.
+           Títulos populares e lançamentos recentes, com roletas de prémios, rondas bónus e funcionalidades especiais.</p>
+        <ul>
+          <li><strong>Catálogo amplo</strong> (NetEnt, Play’n GO, Microgaming, etc.).</li>
+          <li><strong>Apostas em euro (€)</strong> com limites flexíveis para todos os perfis.</li>
+          <li><strong>Campanhas sazonais</strong> com free spins e cashback (confirma T&Cs).</li>
+        </ul>
+        <a href="https://site.gotobacanaplay.com/index.php?aname=micaelvasquess"
+           class="cta" target="_blank" rel="sponsored nofollow noopener">Explorar Slots (Dinheiro Real)</a>
+      </div>
+    </section>
+
+    <section id="roleta">
+      <h2>Roleta com Dinheiro Real</h2>
+      <div class="card">
+        <p><strong>Roleta online</strong> em mesas ao vivo e RNG, com limites que vão do recreativo ao
+           <strong>High Stakes</strong>. Interface fluida, histórico de jogadas e apostas especiais.</p>
+        <ul>
+          <li><strong>Variedades:</strong> Europeia, Francesa e mesas ao vivo com crupiês reais.</li>
+          <li><strong>Limites elevados</strong> disponíveis para jogadores experientes.</li>
+          <li><strong>Ferramentas de controlo</strong> para definir limites e jogar com moderação.</li>
+        </ul>
+        <a href="https://site.gotobacanaplay.com/index.php?aname=micaelvasquess"
+           class="cta" target="_blank" rel="sponsored nofollow noopener">Entrar nas Mesas de Roleta</a>
+      </div>
+    </section>
+
+    <section id="promocoes">
+      <h2>Promoções e Bónus (confirma no operador)</h2>
+      <div class="card">
+        <p>Consulta as ofertas ativas de <strong>bónus de boas-vindas</strong>, <strong>cashback</strong> e
+           campanhas semanais. Percentagens, rollover, jogos elegíveis e prazos devem ser verificados
+           diretamente na BacanaPlay antes de aderires.</p>
+        <ul>
+          <li><strong>Bónus de boas-vindas</strong> para primeiros depósitos (termos aplicam-se).</li>
+          <li><strong>Cashback</strong> em períodos promocionais definidos.</li>
+          <li><strong>Fidelidade/VIP</strong> com benefícios progressivos.</li>
+        </ul>
+        <a href="https://site.gotobacanaplay.com/index.php?aname=micaelvasquess"
+           class="cta" target="_blank" rel="sponsored nofollow noopener">Ver Ofertas com Dinheiro Real</a>
+      </div>
+    </section>
+
+    <section id="torneios">
+      <h2>Torneios de Casino</h2>
+      <div class="card">
+        <p>Participa em <strong>torneios</strong> com tabelas de liderança e prémios adicionais.
+           Cada torneio possui regulamento próprio com jogos elegíveis e critérios de pontuação.</p>
+        <ul>
+          <li><strong>Calendário</strong> rotativo de eventos com prémios em dinheiro.</li>
+          <li><strong>Elegibilidade</strong> sujeita a conta verificada e condições do torneio.</li>
+          <li><strong>Transparência</strong> nos critérios de pontuação e apuramento.</li>
+        </ul>
+        <a href="https://site.gotobacanaplay.com/index.php?aname=micaelvasquess"
+           class="cta" target="_blank" rel="sponsored nofollow noopener">Aderir a um Torneio</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pagamentos, KYC e Segurança</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Métodos de Pagamento</h3>
+          <ul>
+            <li><strong>Depósitos:</strong> Cartões, Multibanco, MB Way e carteiras eletrónicas populares.</li>
+            <li><strong>Levantamentos:</strong> processados após verificação KYC; prazos variam por método.</li>
+            <li><strong>Moeda:</strong> Euro (€). <strong>Criptomoedas:</strong> não são aceites diretamente.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Jogo Responsável</h3>
+          <ul>
+            <li><strong>Limites obrigatórios</strong> de depósito e sessão no registo.</li>
+            <li><strong>Pausa/autoexclusão</strong> conforme normas do SRIJ.</li>
+            <li>Guias e apoio em <a href="jogo-responsavel.html">Jogo Responsável</a>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-title">
+      <h2 id="faq-title">Perguntas Rápidas</h2>
+      <div class="card">
+        <h3>É casino online com dinheiro real?</h3>
+        <p>Sim. Joga slots e roleta com dinheiro real em ambiente licenciado (SRIJ 015).</p>
+
+        <h3>Como acelerar levantamentos?</h3>
+        <p>Completa o KYC, utiliza o mesmo método de depósito e mantém os dados atualizados.</p>
+
+        <h3>Existem limites altos (High Stakes)?</h3>
+        <p>Sim, mesas e jogos com limites elevados estão disponíveis para jogadores experientes.</p>
+
+        <p class="muted"><strong>Aviso:</strong> 18+. Joga com responsabilidade. Termos e condições aplicam-se a todas as ofertas.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 M.Vasquez de Barros. Todos os direitos reservados.</p>
-      <p>Operado por site informativo/afiliado. Contacto:
-        <a href="mailto:michaelvasquez344@gmail.com">michaelvasquez344@gmail.com</a>
-        · +55 (66) 99657-0102 · CPF 053.225.641-79
+    <div class="container footer-inner">
+      <p><strong>Licenciamento:</strong> BacanaPlay — SkillOnNet Ltd., Licença SRIJ n.º 015 (Jogos de Fortuna ou Azar), Portugal.</p>
+      <p>&copy; 2025 M.Vasquez de Barros — Site informativo/afiliado. Contacto:
+        <a href="mailto:michaelvasquez344@gmail.com">michaelvasquez344@gmail.com</a> ·
+        +55 (66) 99657-0102 · CPF 053.225.641-79
       </p>
-      <div style="margin-top:10px;">
-        <a href="politica-privacidade.html">Política de Privacidade</a> |
-        <a href="termos-e-condicoes.html">Termos e Condições</a> |
-        <a href="jogo-responsavel.html">Jogo Responsável</a> |
+      <p class="footer-links">
+        <a href="politica-privacidade.html">Política de Privacidade</a> ·
+        <a href="termos-e-condicoes.html">Termos e Condições</a> ·
+        <a href="jogo-responsavel.html">Jogo Responsável</a> ·
         <a href="contacto.html">Contacto</a>
-      </div>
+      </p>
     </div>
   </footer>
 
   <!-- Cookie banner -->
   <div id="cookie-consent-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
     <div class="row">
-      <span style="flex:1;min-width:220px;font-size:.92em">
+      <span style="flex:1;min-width:220px;font-size:.92rem">
         Este website utiliza cookies para melhorar a experiência e para análises. Ao continuar, concordas com o uso de cookies.
         Consulta a <a href="politica-privacidade.html" style="color:#f7a83d;text-decoration:underline">Política de Privacidade</a>.
       </span>
@@ -165,20 +290,16 @@
     </div>
   </div>
 
-  <!-- JSON-LD (SEO) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"BacanaPlay Portugal — Slots & Roleta com Dinheiro Real | PrimeFluxo",
-    "description":"Bónus, torneios, cashback e VIP high stakes. Operador licenciado (SRIJ 015). Joga com responsabilidade (18+).",
-    "inLanguage":"pt-PT",
-    "publisher":{"@type":"Organization","name":"PrimeFluxo"}
-  }
-  </script>
-
   <script>
-    // cookie consent
+    // Menu hambúrguer
+    const navToggle = document.getElementById('navToggle');
+    const mainNav   = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      const open = mainNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    // Cookie consent
     const COOKIE_NAME='user_cookie_consent';
     const banner=document.getElementById('cookie-consent-banner');
     const btn=document.getElementById('accept-cookies');
